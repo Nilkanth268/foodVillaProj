@@ -45,6 +45,7 @@ public class LoginServlet extends HttpServlet {
 		if(action!=null && action.equals("Login")) {
 			
 			if(type.equals("admin")) {
+				System.out.println("Admin login called...");
 				boolean b=ad.AdminLogin(email, pass);	
 				if(b) {
 					session.setAttribute("aemail", email);
@@ -54,6 +55,7 @@ public class LoginServlet extends HttpServlet {
 				}
 			}
 			if(type.equals("user")) {
+				System.out.println("User login called..");
 				System.out.println(email + ","+pass);
 				boolean b=ad.userLogin(email, pass);
 				if(b) {

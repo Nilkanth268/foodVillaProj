@@ -70,9 +70,11 @@ public class AdminDaoImpl implements AdminDao {
 
 	@Override
 	public boolean AdminLogin(String Emailid, String password) {
+		
+		System.out.println("admin login method called..");
 		try {
 			con=DBUtility.getConnected();
-			sql="select * from AdminLoginTb where AdminEmailId=? and password=?";
+			sql="select * from AdminLoginTb where AdminEmailId=? and password_1=?";
 			ps=con.prepareStatement(sql);
 			ps.setString(1, Emailid);
 			ps.setString(2, password);

@@ -15,7 +15,7 @@
 
 			<h1>Recommended Dishes</h1>
 			<div class="top_dishes_box">
-				<img src="images/templatemo_image_01.jpg" alt="image" width="205"
+				<img src="images/VadaPav_main.jpg" alt="image" width="205"
 					height="150" />
 				<h2>Grilled Steak</h2>
 				<p> bell peppers, corn on the cob, even baked potatoes. <a href="#">Read more...</a>
